@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat :wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url(/photo/yellow-background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 150px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.description {
+    max-width: 800px;
+    text-align: center;
+    background: linear-gradient(130deg, #ffffff, #f9f9ff);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    border: 2px solid #FFDD2D;
+}
+
+.description h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #003366;
+    text-transform: uppercase;
+    border-bottom: 3px solid #FFDD2D;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.description p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.team-member {
+    background-color: #ffffff;
+    padding: 25px;
+    width: 300px;
+    min-height: 580px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(145deg, #ffffff, #f9f9ff);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.team-member:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #003366;
+    transition: transform 0.4s ease;
+    margin: auto;
+}
+
+.team-member:hover img {
+    transform: rotate(10deg);
+}
+
+.team-member h3 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+    color: #003366;
+}
+
+.team-member p {
+    font-size: 15px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.tasks {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    text-align: left;
+    font-weight: 500;
+    color: #003366;
+}
+
+.tasks li {
+    margin-bottom: 8px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.tasks li::before {
+    content: "•";
+    color: #FFDD2D;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.contact-button {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Центрируем содержимое */
+    gap: 10px; /* Оптимальный отступ между иконкой и текстом */
+    background-color: #003366;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    margin: 10px auto; /* Кнопка по центру карточки */
+    width: fit-content; /* Автоматическая ширина */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-button:hover {
+    background-color: #FFDD2D;
+    color: #003366;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-button img {
+    width: 18px;
+    height: 18px;
+}
+
+.technologies {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    line-height: 1.7;
+    position: relative;
+}
+
+.technologies h2 {
+    color: #003366;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #FFDD2D;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.tech-category {
+    margin-bottom: 30px;
+}
+
+.tech-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.tech-header img {
+    width: 30px;
+    height: 30px;
+}
+
+.tech-header h3 {
+    font-size: 20px;
+    color: #003366;
+    margin: 0;
+}
+
+.technologies ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.technologies li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #333;
+}
+
+.technologies li::before {
+    content: "•";
+    color: #FFDD2D;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+@media (max-width: 600px) {
+    .team-member {
+        min-height: 500px;
+        padding: 20px;
+    }
+
+    .team-member img {
+        width: 100px;
+        height: 100px;
+    }
+
+    header h1 {
+        font-size: 1.3rem;
+    }
+
+    .description {
+        padding: 20px;
+    }
+    
+    .technologies {
+        padding: 20px;
+    }
+
+    .tech-header img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .technologies li {
+        font-size: 14px;
+    }
+}
