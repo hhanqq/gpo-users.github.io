@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-image: url(/photo/yellow-background.jpeg);
+    background-image: url(photo/yellow-background.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
